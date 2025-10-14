@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_about_abouts",
+  "info": {
+    "displayName": "About"
+  },
+  "options": {},
+  "attributes": {
+    "aboutHeader": {
+      "type": "string"
+    },
+    "aboutImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "aboutText": {
+      "type": "text"
+    },
+    "aboutBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_promoproducts_promo_products",
+  "info": {
+    "displayName": "PromoProducts"
+  },
+  "options": {},
+  "attributes": {
+    "promoProductsHeader": {
+      "type": "string"
+    },
+    "promoProductsImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "promoProductsBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

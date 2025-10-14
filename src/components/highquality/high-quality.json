@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_highquality_high_qualities",
+  "info": {
+    "displayName": "highQuality"
+  },
+  "options": {},
+  "attributes": {
+    "highQualityHeader": {
+      "type": "string"
+    },
+    "highQualityImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "highQualityText": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_homehero_home_heroes",
+  "info": {
+    "displayName": "homeHero"
+  },
+  "options": {},
+  "attributes": {
+    "heroHeader": {
+      "type": "string"
+    },
+    "heroBanner": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heroText": {
+      "type": "text"
+    },
+    "heroBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

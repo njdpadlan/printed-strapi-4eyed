@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_featuredproducts_featured_products",
+  "info": {
+    "displayName": "FeaturedProducts"
+  },
+  "options": {},
+  "attributes": {
+    "featuredProductsHeader": {
+      "type": "string"
+    },
+    "pressureSealTitle": {
+      "type": "string"
+    },
+    "pressureSealImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pressureSealBtn": {
+      "type": "string"
+    },
+    "linerlessLabelTitle": {
+      "type": "string"
+    },
+    "linerlessLabelImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linerlessLabelBtn": {
+      "type": "string"
+    },
+    "integratedFormText": {
+      "type": "string"
+    },
+    "integratedFormImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "integratedFormBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

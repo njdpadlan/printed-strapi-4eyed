@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_uniqueproducts_unique_products",
+  "info": {
+    "displayName": "UniqueProducts"
+  },
+  "options": {},
+  "attributes": {
+    "uniqueProductsHeader": {
+      "type": "string"
+    },
+    "uniqueProductsText": {
+      "type": "text"
+    },
+    "uniqueProductsImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "uniqueProductsBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

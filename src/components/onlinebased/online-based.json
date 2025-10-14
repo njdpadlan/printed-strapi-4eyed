@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_onlinebased_online_baseds",
+  "info": {
+    "displayName": "OnlineBased"
+  },
+  "options": {},
+  "attributes": {
+    "onlineBasedHeader": {
+      "type": "string"
+    },
+    "onlineBasedImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "onlineBasedText": {
+      "type": "text"
+    },
+    "onlineBasedBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
