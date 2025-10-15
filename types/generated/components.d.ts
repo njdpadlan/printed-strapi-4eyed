@@ -114,6 +114,7 @@ export interface ProductgalleryProductGallery extends Struct.ComponentSchema {
     displayName: 'ProductGallery';
   };
   attributes: {
+    productGalleryHeader: Schema.Attribute.String;
     productGalleryImages: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true

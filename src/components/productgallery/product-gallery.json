@@ -5,6 +5,9 @@
   },
   "options": {},
   "attributes": {
+    "productGalleryHeader": {
+      "type": "string"
+    },
     "productGalleryImages": {
       "type": "media",
       "multiple": true,
