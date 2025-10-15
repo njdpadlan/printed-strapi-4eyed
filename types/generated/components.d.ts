@@ -41,6 +41,21 @@ export interface FeaturedproductsFeaturedProducts
   };
 }
 
+export interface FeaturedpromoproductsFeaturedPromoProducts
+  extends Struct.ComponentSchema {
+  collectionName: 'components_featuredpromoproducts_featured_promo_products';
+  info: {
+    displayName: 'FeaturedPromoProducts';
+  };
+  attributes: {
+    featuredpromoBtn: Schema.Attribute.String;
+    featuredpromoImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    featuredpromoTitle: Schema.Attribute.String;
+  };
+}
+
 export interface FeaturedservicesFeaturedServices
   extends Struct.ComponentSchema {
   collectionName: 'components_featuredservices_featured_services';
@@ -93,6 +108,36 @@ export interface HomeheroHomeHero extends Struct.ComponentSchema {
   };
 }
 
+export interface MoreproductsMoreProducts extends Struct.ComponentSchema {
+  collectionName: 'components_moreproducts_more_products';
+  info: {
+    displayName: 'MoreProducts';
+  };
+  attributes: {
+    chequesImageGallery: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    chequesTitle: Schema.Attribute.String;
+    envelopesImageGallery: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    envelopesTitle: Schema.Attribute.String;
+    formsImageGallery: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    formsTitle: Schema.Attribute.String;
+    labelsmarketingImageGallery: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    labelsmarketingTitle: Schema.Attribute.String;
+    moreproductsHeader: Schema.Attribute.String;
+  };
+}
+
 export interface OnlinebasedOnlineBased extends Struct.ComponentSchema {
   collectionName: 'components_onlinebased_online_baseds';
   info: {
@@ -119,6 +164,43 @@ export interface ProductgalleryProductGallery extends Struct.ComponentSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+  };
+}
+
+export interface ProductheroProductHero extends Struct.ComponentSchema {
+  collectionName: 'components_producthero_product_heroes';
+  info: {
+    displayName: 'productHero';
+  };
+  attributes: {
+    productHeroHeader: Schema.Attribute.String;
+    productHeroText: Schema.Attribute.Text;
+  };
+}
+
+export interface ProductsfeaturedproductsProductsFeaturedProducts
+  extends Struct.ComponentSchema {
+  collectionName: 'components_productsfeaturedproducts_products_featured_products';
+  info: {
+    displayName: 'ProductsFeaturedProducts';
+  };
+  attributes: {
+    featureProductsHeader: Schema.Attribute.String;
+    integratedformBtn: Schema.Attribute.String;
+    integratedformImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    integratedformTitle: Schema.Attribute.String;
+    linerlessBtn: Schema.Attribute.String;
+    linerlessImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    linerlessTitle: Schema.Attribute.String;
+    pressuresealBtn: Schema.Attribute.String;
+    pressuresealImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    pressuresealTitle: Schema.Attribute.String;
   };
 }
 
@@ -156,11 +238,15 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'about.about': AboutAbout;
       'featuredproducts.featured-products': FeaturedproductsFeaturedProducts;
+      'featuredpromoproducts.featured-promo-products': FeaturedpromoproductsFeaturedPromoProducts;
       'featuredservices.featured-services': FeaturedservicesFeaturedServices;
       'highquality.high-quality': HighqualityHighQuality;
       'homehero.home-hero': HomeheroHomeHero;
+      'moreproducts.more-products': MoreproductsMoreProducts;
       'onlinebased.online-based': OnlinebasedOnlineBased;
       'productgallery.product-gallery': ProductgalleryProductGallery;
+      'producthero.product-hero': ProductheroProductHero;
+      'productsfeaturedproducts.products-featured-products': ProductsfeaturedproductsProductsFeaturedProducts;
       'promoproducts.promo-products': PromoproductsPromoProducts;
       'uniqueproducts.unique-products': UniqueproductsUniqueProducts;
     }

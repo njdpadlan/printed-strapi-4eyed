@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_producthero_product_heroes",
+  "info": {
+    "displayName": "productHero"
+  },
+  "options": {},
+  "attributes": {
+    "productHeroHeader": {
+      "type": "string"
+    },
+    "productHeroText": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

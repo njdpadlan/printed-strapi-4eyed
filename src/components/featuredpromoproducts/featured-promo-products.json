@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_featuredpromoproducts_featured_promo_products",
+  "info": {
+    "displayName": "FeaturedPromoProducts"
+  },
+  "options": {},
+  "attributes": {
+    "featuredpromoTitle": {
+      "type": "string"
+    },
+    "featuredpromoBtn": {
+      "type": "string"
+    },
+    "featuredpromoImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

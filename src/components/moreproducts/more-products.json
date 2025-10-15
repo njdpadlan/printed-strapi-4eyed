@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_moreproducts_more_products",
+  "info": {
+    "displayName": "MoreProducts"
+  },
+  "options": {},
+  "attributes": {
+    "moreproductsHeader": {
+      "type": "string"
+    },
+    "formsTitle": {
+      "type": "string"
+    },
+    "formsImageGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "envelopesTitle": {
+      "type": "string"
+    },
+    "envelopesImageGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "chequesTitle": {
+      "type": "string"
+    },
+    "chequesImageGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "labelsmarketingTitle": {
+      "type": "string"
+    },
+    "labelsmarketingImageGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
