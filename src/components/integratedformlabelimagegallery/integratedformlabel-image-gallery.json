@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_integratedformlabelimagegallery_integratedformlabel_image_galleries",
+  "info": {
+    "displayName": "integratedformlabelImageGallery"
+  },
+  "options": {},
+  "attributes": {
+    "integratedformlabelImageGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "integratedformlabelBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

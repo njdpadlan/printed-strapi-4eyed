@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ServicePage": {
+      "type": "dynamiczone",
+      "components": [
+        "servicehero.service-hero",
+        "servicestype.services-type"
+      ]
+    }
+  }
+}

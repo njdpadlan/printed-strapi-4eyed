@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_aboutushero_about_us_heroes",
+  "info": {
+    "displayName": "aboutUsHero"
+  },
+  "options": {},
+  "attributes": {
+    "aboutUsHeroHeader": {
+      "type": "string"
+    },
+    "aboutUsHeroDesc": {
+      "type": "text"
+    },
+    "aboutUsHeroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

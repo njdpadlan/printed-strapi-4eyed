@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "linerless_labels",
+  "info": {
+    "singularName": "linerless-label",
+    "pluralName": "linerless-labels",
+    "displayName": "LinerlessLabel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LinerlessLabelPage": {
+      "type": "dynamiczone",
+      "components": [
+        "linerlesslabelhero.linerlesslabel-hero",
+        "linerlesslabelwhatis.linerlesslabel-what-is",
+        "linerlessimagegallery.linerless-image-gallery"
+      ]
+    }
+  }
+}

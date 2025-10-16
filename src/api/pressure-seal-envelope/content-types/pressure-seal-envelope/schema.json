@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pressure_seal_envelopes",
+  "info": {
+    "singularName": "pressure-seal-envelope",
+    "pluralName": "pressure-seal-envelopes",
+    "displayName": "PressureSealEnvelope"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PressureSealEnvelopePage": {
+      "type": "dynamiczone",
+      "components": [
+        "pressuresealhero.pressureseal-hero",
+        "pressuresealwhatis.pressureseal-what-is",
+        "pressuresealimagegallery.pressureseal-image-gallery"
+      ]
+    }
+  }
+}

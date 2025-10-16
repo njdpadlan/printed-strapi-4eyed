@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_pressuresealwhatis_pressureseal_what_is",
+  "info": {
+    "displayName": "pressuresealWhatIs"
+  },
+  "options": {},
+  "attributes": {
+    "pressuresealWhatIsTitle": {
+      "type": "string"
+    },
+    "pressuresealWhatIsDesc": {
+      "type": "text"
+    },
+    "pressuresealWhatIsImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pressuresealBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

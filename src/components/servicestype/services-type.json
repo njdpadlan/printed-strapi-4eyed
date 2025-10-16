@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_servicestype_services_types",
+  "info": {
+    "displayName": "servicesType"
+  },
+  "options": {},
+  "attributes": {
+    "servicePortalTitle": {
+      "type": "string"
+    },
+    "servicePortalDesc": {
+      "type": "text"
+    },
+    "servicePortalImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "servicePoofingTitle": {
+      "type": "string"
+    },
+    "servicePoofingDesc": {
+      "type": "text"
+    },
+    "servicePoofingImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "serviceWarehouseTitle": {
+      "type": "string"
+    },
+    "serviceWarehouseDesc": {
+      "type": "text"
+    },
+    "serviceWarehouseImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

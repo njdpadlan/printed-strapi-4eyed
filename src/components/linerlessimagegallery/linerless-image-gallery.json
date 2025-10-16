@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_linerlessimagegallery_linerless_image_galleries",
+  "info": {
+    "displayName": "linerlessImageGallery"
+  },
+  "options": {},
+  "attributes": {
+    "linerlesslabelImageGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linerlessBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

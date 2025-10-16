@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_pressuresealhero_pressureseal_heroes",
+  "info": {
+    "displayName": "pressuresealHero"
+  },
+  "options": {},
+  "attributes": {
+    "pressuresealHeader": {
+      "type": "string"
+    },
+    "pressuresealDesc": {
+      "type": "text"
+    },
+    "pressuresealImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

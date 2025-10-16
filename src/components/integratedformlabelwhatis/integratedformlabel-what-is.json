@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_integratedformlabelwhatis_integratedformlabel_what_is",
+  "info": {
+    "displayName": "integratedformlabelWhatIs"
+  },
+  "options": {},
+  "attributes": {
+    "integratedformlabelWhatIsTitle": {
+      "type": "string"
+    },
+    "integratedformlabelWhatIsDesc": {
+      "type": "text"
+    },
+    "integratedformlabelWhatIsImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "integratedformBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

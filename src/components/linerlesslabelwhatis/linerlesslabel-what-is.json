@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_linerlesslabelwhatis_linerlesslabel_what_is",
+  "info": {
+    "displayName": "linerlesslabelWhatIs"
+  },
+  "options": {},
+  "attributes": {
+    "linerlesslabelWhatIsTitle": {
+      "type": "string"
+    },
+    "linerlesslabelWhatIsDesc": {
+      "type": "text"
+    },
+    "linerlesslabelWhatIsImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linerlesslabelBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

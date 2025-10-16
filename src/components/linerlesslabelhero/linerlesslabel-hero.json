@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_linerlesslabelhero_linerlesslabel_heroes",
+  "info": {
+    "displayName": "linerlesslabelHero"
+  },
+  "options": {},
+  "attributes": {
+    "linerlesslabelHeader": {
+      "type": "string"
+    },
+    "linerlesslabelDesc": {
+      "type": "text"
+    },
+    "linerlesslabelImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "integrated_form_labels",
+  "info": {
+    "singularName": "integrated-form-label",
+    "pluralName": "integrated-form-labels",
+    "displayName": "IntegratedFormLabel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "IntegratedFormLabelPage": {
+      "type": "dynamiczone",
+      "components": [
+        "integratedformlabelhero.integratedformlabel-hero",
+        "integratedformlabelwhatis.integratedformlabel-what-is",
+        "integratedformlabelimagegallery.integratedformlabel-image-gallery"
+      ]
+    }
+  }
+}

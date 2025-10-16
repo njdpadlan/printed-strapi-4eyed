@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_servicehero_service_heroes",
+  "info": {
+    "displayName": "serviceHero"
+  },
+  "options": {},
+  "attributes": {
+    "serviceHeroHeader": {
+      "type": "string"
+    },
+    "serviceHeroDesc": {
+      "type": "text"
+    },
+    "serviceHeroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "serviceHeroBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

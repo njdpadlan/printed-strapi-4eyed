@@ -430,6 +430,36 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAboutUsAboutUs extends Struct.CollectionTypeSchema {
+  collectionName: 'about_uses';
+  info: {
+    displayName: 'AboutUs';
+    pluralName: 'about-uses';
+    singularName: 'about-us';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    AboutUsPage: Schema.Attribute.DynamicZone<
+      ['aboutushero.about-us-hero', 'aboutuswhy.about-us-why']
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-us.about-us'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Struct.CollectionTypeSchema {
   collectionName: 'homes';
   info: {
@@ -467,6 +497,111 @@ export interface ApiHomeHome extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiIntegratedFormLabelIntegratedFormLabel
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'integrated_form_labels';
+  info: {
+    displayName: 'IntegratedFormLabel';
+    pluralName: 'integrated-form-labels';
+    singularName: 'integrated-form-label';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    IntegratedFormLabelPage: Schema.Attribute.DynamicZone<
+      [
+        'integratedformlabelhero.integratedformlabel-hero',
+        'integratedformlabelwhatis.integratedformlabel-what-is',
+        'integratedformlabelimagegallery.integratedformlabel-image-gallery',
+      ]
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::integrated-form-label.integrated-form-label'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiLinerlessLabelLinerlessLabel
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'linerless_labels';
+  info: {
+    displayName: 'LinerlessLabel';
+    pluralName: 'linerless-labels';
+    singularName: 'linerless-label';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    LinerlessLabelPage: Schema.Attribute.DynamicZone<
+      [
+        'linerlesslabelhero.linerlesslabel-hero',
+        'linerlesslabelwhatis.linerlesslabel-what-is',
+        'linerlessimagegallery.linerless-image-gallery',
+      ]
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::linerless-label.linerless-label'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPressureSealEnvelopePressureSealEnvelope
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'pressure_seal_envelopes';
+  info: {
+    displayName: 'PressureSealEnvelope';
+    pluralName: 'pressure-seal-envelopes';
+    singularName: 'pressure-seal-envelope';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pressure-seal-envelope.pressure-seal-envelope'
+    > &
+      Schema.Attribute.Private;
+    PressureSealEnvelopePage: Schema.Attribute.DynamicZone<
+      [
+        'pressuresealhero.pressureseal-hero',
+        'pressuresealwhatis.pressureseal-what-is',
+        'pressuresealimagegallery.pressureseal-image-gallery',
+      ]
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
@@ -496,6 +631,36 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiServiceService extends Struct.CollectionTypeSchema {
+  collectionName: 'services';
+  info: {
+    displayName: 'Service';
+    pluralName: 'services';
+    singularName: 'service';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::service.service'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    ServicePage: Schema.Attribute.DynamicZone<
+      ['servicehero.service-hero', 'servicestype.services-type']
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1012,8 +1177,13 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::about-us.about-us': ApiAboutUsAboutUs;
       'api::home.home': ApiHomeHome;
+      'api::integrated-form-label.integrated-form-label': ApiIntegratedFormLabelIntegratedFormLabel;
+      'api::linerless-label.linerless-label': ApiLinerlessLabelLinerlessLabel;
+      'api::pressure-seal-envelope.pressure-seal-envelope': ApiPressureSealEnvelopePressureSealEnvelope;
       'api::product.product': ApiProductProduct;
+      'api::service.service': ApiServiceService;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

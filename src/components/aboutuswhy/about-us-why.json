@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_aboutuswhy_about_us_whies",
+  "info": {
+    "displayName": "aboutUsWhy"
+  },
+  "options": {},
+  "attributes": {
+    "aboutUsWhyTitle": {
+      "type": "string"
+    },
+    "aboutUsWhyDesc": {
+      "type": "text"
+    },
+    "aboutUsWhatTitle": {
+      "type": "string"
+    },
+    "aboutUsWhatDesc": {
+      "type": "text"
+    },
+    "aboutUsWhyBtn": {
+      "type": "string"
+    },
+    "aboutUsWhyImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_integratedformlabelhero_integratedformlabel_heroes",
+  "info": {
+    "displayName": "integratedformlabelHero"
+  },
+  "options": {},
+  "attributes": {
+    "integratedformlabelHeader": {
+      "type": "string"
+    },
+    "integratedformlabelDesc": {
+      "type": "text"
+    },
+    "integratedformlabelImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
