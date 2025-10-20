@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_contactusform_contactus_forms",
+  "info": {
+    "displayName": "contactusForm"
+  },
+  "options": {},
+  "attributes": {
+    "FullName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Subject": {
+      "type": "string"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "ContactPreference": {
+      "type": "string"
+    },
+    "Message": {
+      "type": "text"
+    },
+    "sendmessageBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

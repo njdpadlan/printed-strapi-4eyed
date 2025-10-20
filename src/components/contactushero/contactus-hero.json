@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_contactushero_contactus_heroes",
+  "info": {
+    "displayName": "contactusHero"
+  },
+  "options": {},
+  "attributes": {
+    "contactusHeader": {
+      "type": "string"
+    },
+    "contactusText": {
+      "type": "string"
+    },
+    "callusTitle": {
+      "type": "string"
+    },
+    "callusText": {
+      "type": "string"
+    },
+    "emailTitle": {
+      "type": "string"
+    },
+    "emailText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
