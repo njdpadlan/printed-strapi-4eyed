@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_requestquotehero_requestquote_heroes",
+  "info": {
+    "displayName": "requestquoteHero"
+  },
+  "options": {},
+  "attributes": {
+    "requestquoteHeader": {
+      "type": "string"
+    },
+    "requestquoteText": {
+      "type": "string"
+    },
+    "requestquotePhone": {
+      "type": "string"
+    },
+    "requestquoteEmail": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
