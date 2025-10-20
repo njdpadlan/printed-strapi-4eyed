@@ -46,6 +46,38 @@ export interface AboutuswhyAboutUsWhy extends Struct.ComponentSchema {
   };
 }
 
+export interface ContactusformContactusForm extends Struct.ComponentSchema {
+  collectionName: 'components_contactusform_contactus_forms';
+  info: {
+    displayName: 'contactusForm';
+  };
+  attributes: {
+    CompanyName: Schema.Attribute.String;
+    ContactPreference: Schema.Attribute.String;
+    Email: Schema.Attribute.String;
+    FullName: Schema.Attribute.String;
+    Message: Schema.Attribute.Text;
+    Phone: Schema.Attribute.String;
+    sendmessageBtn: Schema.Attribute.String;
+    Subject: Schema.Attribute.String;
+  };
+}
+
+export interface ContactusheroContactusHero extends Struct.ComponentSchema {
+  collectionName: 'components_contactushero_contactus_heroes';
+  info: {
+    displayName: 'contactusHero';
+  };
+  attributes: {
+    callusText: Schema.Attribute.String;
+    callusTitle: Schema.Attribute.String;
+    contactusHeader: Schema.Attribute.String;
+    contactusText: Schema.Attribute.String;
+    emailText: Schema.Attribute.String;
+    emailTitle: Schema.Attribute.String;
+  };
+}
+
 export interface FeaturedproductsFeaturedProducts
   extends Struct.ComponentSchema {
   collectionName: 'components_featuredproducts_featured_products';
@@ -387,6 +419,40 @@ export interface PromoproductsPromoProducts extends Struct.ComponentSchema {
   };
 }
 
+export interface RequestquoteformRequestquoteForm
+  extends Struct.ComponentSchema {
+  collectionName: 'components_requestquoteform_requestquote_forms';
+  info: {
+    displayName: 'requestquoteForm';
+  };
+  attributes: {
+    AdditionalDetails: Schema.Attribute.String;
+    CompanyName: Schema.Attribute.String;
+    Email: Schema.Attribute.String;
+    FileUpload: Schema.Attribute.String;
+    FullName: Schema.Attribute.String;
+    Phone: Schema.Attribute.String;
+    ProductType: Schema.Attribute.String;
+    Quantity: Schema.Attribute.String;
+    requestquoteBtn: Schema.Attribute.String;
+    Subject: Schema.Attribute.String;
+  };
+}
+
+export interface RequestquoteheroRequestquoteHero
+  extends Struct.ComponentSchema {
+  collectionName: 'components_requestquotehero_requestquote_heroes';
+  info: {
+    displayName: 'requestquoteHero';
+  };
+  attributes: {
+    requestquoteEmail: Schema.Attribute.String;
+    requestquoteHeader: Schema.Attribute.String;
+    requestquotePhone: Schema.Attribute.String;
+    requestquoteText: Schema.Attribute.String;
+  };
+}
+
 export interface ServiceheroServiceHero extends Struct.ComponentSchema {
   collectionName: 'components_servicehero_service_heroes';
   info: {
@@ -447,6 +513,8 @@ declare module '@strapi/strapi' {
       'about.about': AboutAbout;
       'aboutushero.about-us-hero': AboutusheroAboutUsHero;
       'aboutuswhy.about-us-why': AboutuswhyAboutUsWhy;
+      'contactusform.contactus-form': ContactusformContactusForm;
+      'contactushero.contactus-hero': ContactusheroContactusHero;
       'featuredproducts.featured-products': FeaturedproductsFeaturedProducts;
       'featuredpromoproducts.featured-promo-products': FeaturedpromoproductsFeaturedPromoProducts;
       'featuredservices.featured-services': FeaturedservicesFeaturedServices;
@@ -467,6 +535,8 @@ declare module '@strapi/strapi' {
       'producthero.product-hero': ProductheroProductHero;
       'productsfeaturedproducts.products-featured-products': ProductsfeaturedproductsProductsFeaturedProducts;
       'promoproducts.promo-products': PromoproductsPromoProducts;
+      'requestquoteform.requestquote-form': RequestquoteformRequestquoteForm;
+      'requestquotehero.requestquote-hero': RequestquoteheroRequestquoteHero;
       'servicehero.service-hero': ServiceheroServiceHero;
       'servicestype.services-type': ServicestypeServicesType;
       'uniqueproducts.unique-products': UniqueproductsUniqueProducts;

@@ -460,6 +460,36 @@ export interface ApiAboutUsAboutUs extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContactUsContactUs extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_uses';
+  info: {
+    displayName: 'ContactUs';
+    pluralName: 'contact-uses';
+    singularName: 'contact-us';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    ContactUsPage: Schema.Attribute.DynamicZone<
+      ['contactushero.contactus-hero', 'contactusform.contactus-form']
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-us.contact-us'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Struct.CollectionTypeSchema {
   collectionName: 'homes';
   info: {
@@ -631,6 +661,40 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRequestQuoteRequestQuote
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'request_quotes';
+  info: {
+    displayName: 'RequestQuote';
+    pluralName: 'request-quotes';
+    singularName: 'request-quote';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::request-quote.request-quote'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    RequestQuotePage: Schema.Attribute.DynamicZone<
+      [
+        'requestquotehero.requestquote-hero',
+        'requestquoteform.requestquote-form',
+      ]
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1178,11 +1242,13 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-us.about-us': ApiAboutUsAboutUs;
+      'api::contact-us.contact-us': ApiContactUsContactUs;
       'api::home.home': ApiHomeHome;
       'api::integrated-form-label.integrated-form-label': ApiIntegratedFormLabelIntegratedFormLabel;
       'api::linerless-label.linerless-label': ApiLinerlessLabelLinerlessLabel;
       'api::pressure-seal-envelope.pressure-seal-envelope': ApiPressureSealEnvelopePressureSealEnvelope;
       'api::product.product': ApiProductProduct;
+      'api::request-quote.request-quote': ApiRequestQuoteRequestQuote;
       'api::service.service': ApiServiceService;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "request_quotes",
+  "info": {
+    "singularName": "request-quote",
+    "pluralName": "request-quotes",
+    "displayName": "RequestQuote"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RequestQuotePage": {
+      "type": "dynamiczone",
+      "components": [
+        "requestquotehero.requestquote-hero",
+        "requestquoteform.requestquote-form"
+      ]
+    }
+  }
+}
