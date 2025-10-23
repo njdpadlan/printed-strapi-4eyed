@@ -546,7 +546,7 @@ export interface ApiIntegratedFormLabelIntegratedFormLabel
       [
         'integratedformlabelhero.integratedformlabel-hero',
         'integratedformlabelwhatis.integratedformlabel-what-is',
-        'integratedformlabelimagegallery.integratedformlabel-image-gallery',
+        'smartefficientform.smart-efficient-form',
       ]
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -581,7 +581,7 @@ export interface ApiLinerlessLabelLinerlessLabel
       [
         'linerlesslabelhero.linerlesslabel-hero',
         'linerlesslabelwhatis.linerlesslabel-what-is',
-        'linerlessimagegallery.linerless-image-gallery',
+        'sustainablelabel.sustainable-label',
       ]
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -622,7 +622,7 @@ export interface ApiPressureSealEnvelopePressureSealEnvelope
       [
         'pressuresealhero.pressureseal-hero',
         'pressuresealwhatis.pressureseal-what-is',
-        'pressuresealimagegallery.pressureseal-image-gallery',
+        'securefold.secure-fold',
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;

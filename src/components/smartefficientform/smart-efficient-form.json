@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_smartefficientform_smart_efficient_forms",
+  "info": {
+    "displayName": "SmartEfficientForm"
+  },
+  "options": {},
+  "attributes": {
+    "smartefficientformTitle": {
+      "type": "string"
+    },
+    "commonapplicationsText": {
+      "type": "string"
+    },
+    "ecommerce": {
+      "type": "string"
+    },
+    "distribution": {
+      "type": "string"
+    },
+    "retail": {
+      "type": "string"
+    },
+    "healthcare": {
+      "type": "string"
+    },
+    "insurance": {
+      "type": "string"
+    },
+    "logistics": {
+      "type": "string"
+    },
+    "smartefficientImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "smartefficientBtn": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

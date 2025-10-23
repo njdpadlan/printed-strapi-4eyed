@@ -11,7 +11,13 @@
     "linerlesslabelWhatIsDesc": {
       "type": "text"
     },
-    "linerlesslabelWhatIsImage": {
+    "perfectforwindowText": {
+      "type": "text"
+    },
+    "printedmanufactureText": {
+      "type": "text"
+    },
+    "linerlesslabelImage1": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -21,8 +27,25 @@
         "audios"
       ]
     },
-    "linerlesslabelBtn": {
-      "type": "string"
+    "linerlesslabelImage2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linerlesslabelImage3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   },
   "config": {}

@@ -8,12 +8,12 @@
     "moreproductsHeader": {
       "type": "string"
     },
-    "formsTitle": {
+    "lasercutTitle": {
       "type": "string"
     },
-    "formsImageGallery": {
+    "lasercutImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -21,12 +21,27 @@
         "audios"
       ]
     },
-    "envelopesTitle": {
+    "highqualitylaserTitle": {
       "type": "string"
     },
-    "envelopesImageGallery": {
+    "lasercutText": {
+      "type": "text"
+    },
+    "partsText": {
+      "type": "text"
+    },
+    "featuresText": {
+      "type": "string"
+    },
+    "customsizesText": {
+      "type": "text"
+    },
+    "snapsetTitle": {
+      "type": "string"
+    },
+    "snapsetImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -34,12 +49,27 @@
         "audios"
       ]
     },
-    "chequesTitle": {
+    "durableTitle": {
       "type": "string"
     },
-    "chequesImageGallery": {
+    "multipartText": {
+      "type": "text"
+    },
+    "snapsetpartsText": {
+      "type": "text"
+    },
+    "commonuseText": {
+      "type": "string"
+    },
+    "fieldserviceText": {
+      "type": "text"
+    },
+    "continuousTitle": {
+      "type": "string"
+    },
+    "continuousImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -47,18 +77,48 @@
         "audios"
       ]
     },
-    "labelsmarketingTitle": {
+    "reliableTitle": {
       "type": "string"
     },
-    "labelsmarketingImageGallery": {
+    "continuousText": {
+      "type": "text"
+    },
+    "continuouspartsText": {
+      "type": "text"
+    },
+    "idealforText": {
+      "type": "string"
+    },
+    "accountingText": {
+      "type": "text"
+    },
+    "customenvelopeTitle": {
+      "type": "string"
+    },
+    "customenvelopeImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ]
+    },
+    "deliverbrandfirstTitle": {
+      "type": "string"
+    },
+    "daytodayText": {
+      "type": "text"
+    },
+    "regularText": {
+      "type": "text"
+    },
+    "availableoptionsText": {
+      "type": "string"
+    },
+    "regularwindowText": {
+      "type": "text"
     }
   },
   "config": {}

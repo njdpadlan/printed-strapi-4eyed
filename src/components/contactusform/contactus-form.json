@@ -20,9 +20,6 @@
     "CompanyName": {
       "type": "string"
     },
-    "ContactPreference": {
-      "type": "string"
-    },
     "Message": {
       "type": "text"
     },

@@ -29,6 +29,18 @@
         "videos",
         "audios"
       ]
+    },
+    "onlineservicesText": {
+      "type": "text"
+    },
+    "customercareText": {
+      "type": "text"
+    },
+    "qualityText": {
+      "type": "text"
+    },
+    "localexpertiseText": {
+      "type": "text"
     }
   },
   "config": {}

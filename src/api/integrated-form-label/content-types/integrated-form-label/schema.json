@@ -16,7 +16,7 @@
       "components": [
         "integratedformlabelhero.integratedformlabel-hero",
         "integratedformlabelwhatis.integratedformlabel-what-is",
-        "integratedformlabelimagegallery.integratedformlabel-image-gallery"
+        "smartefficientform.smart-efficient-form"
       ]
     }
   }

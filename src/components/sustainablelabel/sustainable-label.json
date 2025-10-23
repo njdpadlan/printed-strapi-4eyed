@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_sustainablelabel_sustainable_labels",
+  "info": {
+    "displayName": "SustainableLabel"
+  },
+  "options": {},
+  "attributes": {
+    "keyadvantagesTitle": {
+      "type": "string"
+    },
+    "nolinerText": {
+      "type": "text"
+    },
+    "continuousrollText": {
+      "type": "text"
+    },
+    "custombrandingText": {
+      "type": "text"
+    },
+    "excellentforText": {
+      "type": "text"
+    },
+    "sustainableImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sustainableBtn": {
+      "type": "string"
+    },
+    "sustainableTitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

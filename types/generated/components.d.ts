@@ -43,6 +43,10 @@ export interface AboutuswhyAboutUsWhy extends Struct.ComponentSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     aboutUsWhyTitle: Schema.Attribute.String;
+    customercareText: Schema.Attribute.Text;
+    localexpertiseText: Schema.Attribute.Text;
+    onlineservicesText: Schema.Attribute.Text;
+    qualityText: Schema.Attribute.Text;
   };
 }
 
@@ -53,7 +57,6 @@ export interface ContactusformContactusForm extends Struct.ComponentSchema {
   };
   attributes: {
     CompanyName: Schema.Attribute.String;
-    ContactPreference: Schema.Attribute.String;
     Email: Schema.Attribute.String;
     FullName: Schema.Attribute.String;
     Message: Schema.Attribute.Text;
@@ -115,6 +118,7 @@ export interface FeaturedpromoproductsFeaturedPromoProducts
     featuredpromoImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    featuredpromoText: Schema.Attribute.Text;
     featuredpromoTitle: Schema.Attribute.String;
   };
 }
@@ -186,21 +190,6 @@ export interface IntegratedformlabelheroIntegratedformlabelHero
   };
 }
 
-export interface IntegratedformlabelimagegalleryIntegratedformlabelImageGallery
-  extends Struct.ComponentSchema {
-  collectionName: 'components_integratedformlabelimagegallery_integratedformlabel_image_galleries';
-  info: {
-    displayName: 'integratedformlabelImageGallery';
-  };
-  attributes: {
-    integratedformlabelBtn: Schema.Attribute.String;
-    integratedformlabelImageGallery: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-  };
-}
-
 export interface IntegratedformlabelwhatisIntegratedformlabelWhatIs
   extends Struct.ComponentSchema {
   collectionName: 'components_integratedformlabelwhatis_integratedformlabel_what_is';
@@ -208,27 +197,18 @@ export interface IntegratedformlabelwhatisIntegratedformlabelWhatIs
     displayName: 'integratedformlabelWhatIs';
   };
   attributes: {
-    integratedformBtn: Schema.Attribute.String;
-    integratedformlabelWhatIsDesc: Schema.Attribute.Text;
-    integratedformlabelWhatIsImage: Schema.Attribute.Media<
+    integratedformImage1: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    integratedformlabelWhatIsTitle: Schema.Attribute.String;
-  };
-}
-
-export interface LinerlessimagegalleryLinerlessImageGallery
-  extends Struct.ComponentSchema {
-  collectionName: 'components_linerlessimagegallery_linerless_image_galleries';
-  info: {
-    displayName: 'linerlessImageGallery';
-  };
-  attributes: {
-    linerlessBtn: Schema.Attribute.String;
-    linerlesslabelImageGallery: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+    integratedformImage2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
     >;
+    integratedformImage3: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    integratedformlabelWhatIsDesc: Schema.Attribute.Text;
+    integratedformlabelWhatIsTitle: Schema.Attribute.String;
+    integratedsolutionText: Schema.Attribute.Text;
   };
 }
 
@@ -239,11 +219,11 @@ export interface LinerlesslabelheroLinerlesslabelHero
     displayName: 'linerlesslabelHero';
   };
   attributes: {
-    linerlesslabelDesc: Schema.Attribute.Text;
-    linerlesslabelHeader: Schema.Attribute.String;
-    linerlesslabelImage: Schema.Attribute.Media<
+    linerlessImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    linerlesslabelHeader: Schema.Attribute.String;
+    linerlesslabelText: Schema.Attribute.Text;
   };
 }
 
@@ -254,12 +234,19 @@ export interface LinerlesslabelwhatisLinerlesslabelWhatIs
     displayName: 'linerlesslabelWhatIs';
   };
   attributes: {
-    linerlesslabelBtn: Schema.Attribute.String;
-    linerlesslabelWhatIsDesc: Schema.Attribute.Text;
-    linerlesslabelWhatIsImage: Schema.Attribute.Media<
+    linerlesslabelImage1: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    linerlesslabelImage2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    linerlesslabelImage3: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    linerlesslabelWhatIsDesc: Schema.Attribute.Text;
     linerlesslabelWhatIsTitle: Schema.Attribute.String;
+    perfectforwindowText: Schema.Attribute.Text;
+    printedmanufactureText: Schema.Attribute.Text;
   };
 }
 
@@ -269,27 +256,43 @@ export interface MoreproductsMoreProducts extends Struct.ComponentSchema {
     displayName: 'MoreProducts';
   };
   attributes: {
-    chequesImageGallery: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+    accountingText: Schema.Attribute.Text;
+    availableoptionsText: Schema.Attribute.String;
+    commonuseText: Schema.Attribute.String;
+    continuousImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
     >;
-    chequesTitle: Schema.Attribute.String;
-    envelopesImageGallery: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+    continuouspartsText: Schema.Attribute.Text;
+    continuousText: Schema.Attribute.Text;
+    continuousTitle: Schema.Attribute.String;
+    customenvelopeImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
     >;
-    envelopesTitle: Schema.Attribute.String;
-    formsImageGallery: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+    customenvelopeTitle: Schema.Attribute.String;
+    customsizesText: Schema.Attribute.Text;
+    daytodayText: Schema.Attribute.Text;
+    deliverbrandfirstTitle: Schema.Attribute.String;
+    durableTitle: Schema.Attribute.String;
+    featuresText: Schema.Attribute.String;
+    fieldserviceText: Schema.Attribute.Text;
+    highqualitylaserTitle: Schema.Attribute.String;
+    idealforText: Schema.Attribute.String;
+    lasercutImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
     >;
-    formsTitle: Schema.Attribute.String;
-    labelsmarketingImageGallery: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    labelsmarketingTitle: Schema.Attribute.String;
+    lasercutText: Schema.Attribute.Text;
+    lasercutTitle: Schema.Attribute.String;
     moreproductsHeader: Schema.Attribute.String;
+    multipartText: Schema.Attribute.Text;
+    partsText: Schema.Attribute.Text;
+    regularText: Schema.Attribute.Text;
+    regularwindowText: Schema.Attribute.Text;
+    reliableTitle: Schema.Attribute.String;
+    snapsetImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    snapsetpartsText: Schema.Attribute.Text;
+    snapsetTitle: Schema.Attribute.String;
   };
 }
 
@@ -323,21 +326,6 @@ export interface PressuresealheroPressuresealHero
   };
 }
 
-export interface PressuresealimagegalleryPressuresealImageGallery
-  extends Struct.ComponentSchema {
-  collectionName: 'components_pressuresealimagegallery_pressureseal_image_galleries';
-  info: {
-    displayName: 'pressuresealImageGallery';
-  };
-  attributes: {
-    pressuresealBtn: Schema.Attribute.String;
-    pressuresealImageGallery: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-  };
-}
-
 export interface PressuresealwhatisPressuresealWhatIs
   extends Struct.ComponentSchema {
   collectionName: 'components_pressuresealwhatis_pressureseal_what_is';
@@ -345,12 +333,18 @@ export interface PressuresealwhatisPressuresealWhatIs
     displayName: 'pressuresealWhatIs';
   };
   attributes: {
-    pressuresealBtn: Schema.Attribute.String;
-    pressuresealWhatIsDesc: Schema.Attribute.Text;
-    pressuresealWhatIsImage: Schema.Attribute.Media<
+    pressuresealImage1: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    pressuresealImage2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    pressuresealImage3: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    pressuresealWhatIsDesc: Schema.Attribute.Text;
     pressuresealWhatIsTitle: Schema.Attribute.String;
+    sealedbypressureText: Schema.Attribute.Text;
   };
 }
 
@@ -375,6 +369,9 @@ export interface ProductheroProductHero extends Struct.ComponentSchema {
   };
   attributes: {
     productHeroHeader: Schema.Attribute.String;
+    productHeroImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     productHeroText: Schema.Attribute.Text;
   };
 }
@@ -416,6 +413,7 @@ export interface PromoproductsPromoProducts extends Struct.ComponentSchema {
     promoProductsImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    promoproductsText: Schema.Attribute.Text;
   };
 }
 
@@ -450,6 +448,26 @@ export interface RequestquoteheroRequestquoteHero
     requestquoteHeader: Schema.Attribute.String;
     requestquotePhone: Schema.Attribute.String;
     requestquoteText: Schema.Attribute.String;
+  };
+}
+
+export interface SecurefoldSecureFold extends Struct.ComponentSchema {
+  collectionName: 'components_securefold_secure_folds';
+  info: {
+    displayName: 'SecureFold';
+  };
+  attributes: {
+    directmail: Schema.Attribute.String;
+    idealforText: Schema.Attribute.String;
+    payroll: Schema.Attribute.String;
+    securefoldBtn: Schema.Attribute.String;
+    securefoldImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    securefoldTitle: Schema.Attribute.String;
+    statements: Schema.Attribute.String;
+    taxforms: Schema.Attribute.String;
+    utilitybills: Schema.Attribute.String;
   };
 }
 
@@ -492,6 +510,48 @@ export interface ServicestypeServicesType extends Struct.ComponentSchema {
   };
 }
 
+export interface SmartefficientformSmartEfficientForm
+  extends Struct.ComponentSchema {
+  collectionName: 'components_smartefficientform_smart_efficient_forms';
+  info: {
+    displayName: 'SmartEfficientForm';
+  };
+  attributes: {
+    commonapplicationsText: Schema.Attribute.String;
+    distribution: Schema.Attribute.String;
+    ecommerce: Schema.Attribute.String;
+    healthcare: Schema.Attribute.String;
+    insurance: Schema.Attribute.String;
+    logistics: Schema.Attribute.String;
+    retail: Schema.Attribute.String;
+    smartefficientBtn: Schema.Attribute.String;
+    smartefficientformTitle: Schema.Attribute.String;
+    smartefficientImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
+export interface SustainablelabelSustainableLabel
+  extends Struct.ComponentSchema {
+  collectionName: 'components_sustainablelabel_sustainable_labels';
+  info: {
+    displayName: 'SustainableLabel';
+  };
+  attributes: {
+    continuousrollText: Schema.Attribute.Text;
+    custombrandingText: Schema.Attribute.Text;
+    excellentforText: Schema.Attribute.Text;
+    keyadvantagesTitle: Schema.Attribute.String;
+    nolinerText: Schema.Attribute.Text;
+    sustainableBtn: Schema.Attribute.String;
+    sustainableImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    sustainableTitle: Schema.Attribute.String;
+  };
+}
+
 export interface UniqueproductsUniqueProducts extends Struct.ComponentSchema {
   collectionName: 'components_uniqueproducts_unique_products';
   info: {
@@ -521,15 +581,12 @@ declare module '@strapi/strapi' {
       'highquality.high-quality': HighqualityHighQuality;
       'homehero.home-hero': HomeheroHomeHero;
       'integratedformlabelhero.integratedformlabel-hero': IntegratedformlabelheroIntegratedformlabelHero;
-      'integratedformlabelimagegallery.integratedformlabel-image-gallery': IntegratedformlabelimagegalleryIntegratedformlabelImageGallery;
       'integratedformlabelwhatis.integratedformlabel-what-is': IntegratedformlabelwhatisIntegratedformlabelWhatIs;
-      'linerlessimagegallery.linerless-image-gallery': LinerlessimagegalleryLinerlessImageGallery;
       'linerlesslabelhero.linerlesslabel-hero': LinerlesslabelheroLinerlesslabelHero;
       'linerlesslabelwhatis.linerlesslabel-what-is': LinerlesslabelwhatisLinerlesslabelWhatIs;
       'moreproducts.more-products': MoreproductsMoreProducts;
       'onlinebased.online-based': OnlinebasedOnlineBased;
       'pressuresealhero.pressureseal-hero': PressuresealheroPressuresealHero;
-      'pressuresealimagegallery.pressureseal-image-gallery': PressuresealimagegalleryPressuresealImageGallery;
       'pressuresealwhatis.pressureseal-what-is': PressuresealwhatisPressuresealWhatIs;
       'productgallery.product-gallery': ProductgalleryProductGallery;
       'producthero.product-hero': ProductheroProductHero;
@@ -537,8 +594,11 @@ declare module '@strapi/strapi' {
       'promoproducts.promo-products': PromoproductsPromoProducts;
       'requestquoteform.requestquote-form': RequestquoteformRequestquoteForm;
       'requestquotehero.requestquote-hero': RequestquoteheroRequestquoteHero;
+      'securefold.secure-fold': SecurefoldSecureFold;
       'servicehero.service-hero': ServiceheroServiceHero;
       'servicestype.services-type': ServicestypeServicesType;
+      'smartefficientform.smart-efficient-form': SmartefficientformSmartEfficientForm;
+      'sustainablelabel.sustainable-label': SustainablelabelSustainableLabel;
       'uniqueproducts.unique-products': UniqueproductsUniqueProducts;
     }
   }

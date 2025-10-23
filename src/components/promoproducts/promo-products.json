@@ -20,6 +20,9 @@
     },
     "promoProductsBtn": {
       "type": "string"
+    },
+    "promoproductsText": {
+      "type": "text"
     }
   },
   "config": {}
