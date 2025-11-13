@@ -509,11 +509,7 @@ export interface ApiHomeHome extends Struct.CollectionTypeSchema {
         'homehero.home-hero',
         'highquality.high-quality',
         'featuredproducts.featured-products',
-        'uniqueproducts.unique-products',
-        'promoproducts.promo-products',
-        'featuredservices.featured-services',
         'onlinebased.online-based',
-        'productgallery.product-gallery',
         'about.about',
       ]
     >;

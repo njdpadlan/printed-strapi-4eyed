@@ -5,22 +5,28 @@
   },
   "options": {},
   "attributes": {
-    "aboutUsWhyTitle": {
+    "whyChooseHeader": {
       "type": "string"
     },
-    "aboutUsWhyDesc": {
+    "whyChooseDesc": {
+      "type": "string"
+    },
+    "whatSetsApartHeader": {
+      "type": "string"
+    },
+    "atPrintedDesc": {
       "type": "text"
     },
-    "aboutUsWhatTitle": {
-      "type": "string"
-    },
-    "aboutUsWhatDesc": {
+    "withDecadesDesc": {
       "type": "text"
     },
-    "aboutUsWhyBtn": {
+    "printSmarterText": {
       "type": "string"
     },
-    "aboutUsWhyImage": {
+    "printedText": {
+      "type": "string"
+    },
+    "aboutusWhyImage": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -30,17 +36,8 @@
         "audios"
       ]
     },
-    "onlineservicesText": {
-      "type": "text"
-    },
-    "customercareText": {
-      "type": "text"
-    },
-    "qualityText": {
-      "type": "text"
-    },
-    "localexpertiseText": {
-      "type": "text"
+    "aboutUsBtn": {
+      "type": "string"
     }
   },
   "config": {}

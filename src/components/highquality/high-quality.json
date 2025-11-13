@@ -20,6 +20,9 @@
     },
     "highQualityText": {
       "type": "text"
+    },
+    "highQualityBtn": {
+      "type": "string"
     }
   },
   "config": {}

@@ -6,12 +6,13 @@ export interface AboutAbout extends Struct.ComponentSchema {
     displayName: 'About';
   };
   attributes: {
-    aboutBtn: Schema.Attribute.String;
     aboutHeader: Schema.Attribute.String;
     aboutImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     aboutText: Schema.Attribute.Text;
+    contactUsBtn: Schema.Attribute.String;
+    requestQuoteBtn: Schema.Attribute.String;
   };
 }
 
@@ -21,11 +22,13 @@ export interface AboutusheroAboutUsHero extends Struct.ComponentSchema {
     displayName: 'aboutUsHero';
   };
   attributes: {
-    aboutUsHeroDesc: Schema.Attribute.Text;
     aboutUsHeroHeader: Schema.Attribute.String;
-    aboutUsHeroImage: Schema.Attribute.Media<
+    aboutUsHeroImg: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    canadianBasedText: Schema.Attribute.String;
+    smartPrintingText: Schema.Attribute.String;
+    trustedExpertiseText: Schema.Attribute.String;
   };
 }
 
@@ -35,18 +38,17 @@ export interface AboutuswhyAboutUsWhy extends Struct.ComponentSchema {
     displayName: 'aboutUsWhy';
   };
   attributes: {
-    aboutUsWhatDesc: Schema.Attribute.Text;
-    aboutUsWhatTitle: Schema.Attribute.String;
-    aboutUsWhyBtn: Schema.Attribute.String;
-    aboutUsWhyDesc: Schema.Attribute.Text;
-    aboutUsWhyImage: Schema.Attribute.Media<
+    aboutUsBtn: Schema.Attribute.String;
+    aboutusWhyImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    aboutUsWhyTitle: Schema.Attribute.String;
-    customercareText: Schema.Attribute.Text;
-    localexpertiseText: Schema.Attribute.Text;
-    onlineservicesText: Schema.Attribute.Text;
-    qualityText: Schema.Attribute.Text;
+    atPrintedDesc: Schema.Attribute.Text;
+    printedText: Schema.Attribute.String;
+    printSmarterText: Schema.Attribute.String;
+    whatSetsApartHeader: Schema.Attribute.String;
+    whyChooseDesc: Schema.Attribute.String;
+    whyChooseHeader: Schema.Attribute.String;
+    withDecadesDesc: Schema.Attribute.Text;
   };
 }
 
@@ -56,13 +58,11 @@ export interface ContactusformContactusForm extends Struct.ComponentSchema {
     displayName: 'contactusForm';
   };
   attributes: {
-    CompanyName: Schema.Attribute.String;
     Email: Schema.Attribute.String;
     FullName: Schema.Attribute.String;
     Message: Schema.Attribute.Text;
     Phone: Schema.Attribute.String;
     sendmessageBtn: Schema.Attribute.String;
-    Subject: Schema.Attribute.String;
   };
 }
 
@@ -152,6 +152,7 @@ export interface HighqualityHighQuality extends Struct.ComponentSchema {
     displayName: 'highQuality';
   };
   attributes: {
+    highQualityBtn: Schema.Attribute.String;
     highQualityHeader: Schema.Attribute.String;
     highQualityImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
@@ -169,9 +170,17 @@ export interface HomeheroHomeHero extends Struct.ComponentSchema {
     heroBanner: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    heroBtn: Schema.Attribute.String;
     heroHeader: Schema.Attribute.String;
     heroText: Schema.Attribute.Text;
+    onlineServicesBtn: Schema.Attribute.String;
+    onlineServicesHeader: Schema.Attribute.String;
+    onlineServicesText: Schema.Attribute.String;
+    ourProductsBtn: Schema.Attribute.String;
+    ourProductsHeader: Schema.Attribute.String;
+    ourProductsText: Schema.Attribute.String;
+    promoProductsBtn: Schema.Attribute.String;
+    promoProductsHeader: Schema.Attribute.String;
+    promoProductsText: Schema.Attribute.String;
   };
 }
 
@@ -433,7 +442,6 @@ export interface RequestquoteformRequestquoteForm
     ProductType: Schema.Attribute.String;
     Quantity: Schema.Attribute.String;
     requestquoteBtn: Schema.Attribute.String;
-    Subject: Schema.Attribute.String;
   };
 }
 
