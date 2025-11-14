@@ -47,7 +47,7 @@ export interface AboutuswhyAboutUsWhy extends Struct.ComponentSchema {
     printedText: Schema.Attribute.String;
     printSmarterText: Schema.Attribute.String;
     whatSetsApartHeader: Schema.Attribute.String;
-    whyChooseDesc: Schema.Attribute.String;
+    whyChooseDesc: Schema.Attribute.Text;
     whyChooseHeader: Schema.Attribute.String;
     withDecadesDesc: Schema.Attribute.Text;
   };

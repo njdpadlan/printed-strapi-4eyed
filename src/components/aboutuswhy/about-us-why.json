@@ -9,7 +9,7 @@
       "type": "string"
     },
     "whyChooseDesc": {
-      "type": "string"
+      "type": "text"
     },
     "whatSetsApartHeader": {
       "type": "string"
