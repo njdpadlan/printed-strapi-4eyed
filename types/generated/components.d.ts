@@ -269,12 +269,14 @@ export interface MoreproductsMoreProducts extends Struct.ComponentSchema {
     accountingText: Schema.Attribute.Text;
     availableoptionsText: Schema.Attribute.String;
     commonuseText: Schema.Attribute.String;
+    continuousAbout: Schema.Attribute.String;
     continuousImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     continuouspartsText: Schema.Attribute.Text;
     continuousText: Schema.Attribute.Text;
     continuousTitle: Schema.Attribute.String;
+    customEnvelopeAbout: Schema.Attribute.String;
     customenvelopeImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
@@ -287,6 +289,7 @@ export interface MoreproductsMoreProducts extends Struct.ComponentSchema {
     fieldserviceText: Schema.Attribute.Text;
     highqualitylaserTitle: Schema.Attribute.String;
     idealforText: Schema.Attribute.String;
+    laserCutAbout: Schema.Attribute.String;
     lasercutImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
@@ -298,6 +301,7 @@ export interface MoreproductsMoreProducts extends Struct.ComponentSchema {
     regularText: Schema.Attribute.Text;
     regularwindowText: Schema.Attribute.Text;
     reliableTitle: Schema.Attribute.String;
+    snapsetAbout: Schema.Attribute.String;
     snapsetImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;

@@ -24,6 +24,9 @@
     "highqualitylaserTitle": {
       "type": "string"
     },
+    "laserCutAbout": {
+      "type": "string"
+    },
     "lasercutText": {
       "type": "text"
     },
@@ -48,6 +51,9 @@
         "videos",
         "audios"
       ]
+    },
+    "snapsetAbout": {
+      "type": "string"
     },
     "durableTitle": {
       "type": "string"
@@ -77,6 +83,9 @@
         "audios"
       ]
     },
+    "continuousAbout": {
+      "type": "string"
+    },
     "reliableTitle": {
       "type": "string"
     },
@@ -104,6 +113,9 @@
         "videos",
         "audios"
       ]
+    },
+    "customEnvelopeAbout": {
+      "type": "string"
     },
     "deliverbrandfirstTitle": {
       "type": "string"
