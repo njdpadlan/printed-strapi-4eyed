@@ -26,6 +26,9 @@
     },
     "canadianBasedText": {
       "type": "string"
+    },
+    "aboutUsHeroDesc": {
+      "type": "text"
     }
   },
   "config": {}

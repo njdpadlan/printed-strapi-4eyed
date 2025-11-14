@@ -22,6 +22,7 @@ export interface AboutusheroAboutUsHero extends Struct.ComponentSchema {
     displayName: 'aboutUsHero';
   };
   attributes: {
+    aboutUsHeroDesc: Schema.Attribute.Text;
     aboutUsHeroHeader: Schema.Attribute.String;
     aboutUsHeroImg: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
