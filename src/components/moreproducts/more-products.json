@@ -131,6 +131,18 @@
     },
     "regularwindowText": {
       "type": "text"
+    },
+    "laserCutChooseFrom": {
+      "type": "string"
+    },
+    "snapsetChooseFrom": {
+      "type": "string"
+    },
+    "customEnvelopeChooseFrom": {
+      "type": "string"
+    },
+    "continuousChooseFrom": {
+      "type": "string"
     }
   },
   "config": {}
