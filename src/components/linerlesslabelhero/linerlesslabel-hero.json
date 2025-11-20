@@ -11,7 +11,17 @@
     "linerlesslabelText": {
       "type": "text"
     },
-    "linerlessImage": {
+    "linerlessImageMobile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linerlessImageDesktop": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

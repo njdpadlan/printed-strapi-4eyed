@@ -194,7 +194,10 @@ export interface IntegratedformlabelheroIntegratedformlabelHero
   attributes: {
     integratedformlabelDesc: Schema.Attribute.Text;
     integratedformlabelHeader: Schema.Attribute.String;
-    integratedformlabelImage: Schema.Attribute.Media<
+    integratedformlabelImageDesktop: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    integratedformlabelImageMobile: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
   };
@@ -229,7 +232,10 @@ export interface LinerlesslabelheroLinerlesslabelHero
     displayName: 'linerlesslabelHero';
   };
   attributes: {
-    linerlessImage: Schema.Attribute.Media<
+    linerlessImageDesktop: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    linerlessImageMobile: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     linerlesslabelHeader: Schema.Attribute.String;
@@ -338,7 +344,10 @@ export interface PressuresealheroPressuresealHero
   attributes: {
     pressuresealDesc: Schema.Attribute.Text;
     pressuresealHeader: Schema.Attribute.String;
-    pressuresealImage: Schema.Attribute.Media<
+    pressuresealImageDesktop: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    pressuresealImageMobile: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
   };

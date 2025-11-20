@@ -11,7 +11,17 @@
     "pressuresealDesc": {
       "type": "text"
     },
-    "pressuresealImage": {
+    "pressuresealImageMobile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pressuresealImageDesktop": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
