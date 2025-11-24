@@ -21,14 +21,8 @@
     "productsDesc": {
       "type": "text"
     },
-    "About": {
-      "type": "string"
-    },
     "AboutDesc": {
       "type": "text"
-    },
-    "ChooseFrom": {
-      "type": "string"
     },
     "ChooseFromList1": {
       "type": "string"
@@ -43,9 +37,6 @@
       "type": "string"
     },
     "ChooseFromList5": {
-      "type": "string"
-    },
-    "IdealFor": {
       "type": "string"
     },
     "IdealForList1": {

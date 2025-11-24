@@ -59,15 +59,12 @@ export interface AddmoreproductsAddMoreProducts extends Struct.ComponentSchema {
     displayName: 'AddMoreProducts';
   };
   attributes: {
-    About: Schema.Attribute.String;
     AboutDesc: Schema.Attribute.Text;
-    ChooseFrom: Schema.Attribute.String;
     ChooseFromList1: Schema.Attribute.String;
     ChooseFromList2: Schema.Attribute.String;
     ChooseFromList3: Schema.Attribute.String;
     ChooseFromList4: Schema.Attribute.String;
     ChooseFromList5: Schema.Attribute.String;
-    IdealFor: Schema.Attribute.String;
     IdealForList1: Schema.Attribute.String;
     IdealForList2: Schema.Attribute.String;
     IdealForList3: Schema.Attribute.String;
