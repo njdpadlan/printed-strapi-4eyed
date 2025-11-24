@@ -320,6 +320,35 @@ export interface MoreproductsMoreProducts extends Struct.ComponentSchema {
   };
 }
 
+export interface MoreproductstestMoreProductsTest
+  extends Struct.ComponentSchema {
+  collectionName: 'components_moreproductstest_more_products_tests';
+  info: {
+    displayName: 'MoreProductsTest';
+  };
+  attributes: {
+    About: Schema.Attribute.String;
+    AboutDesc: Schema.Attribute.Text;
+    ChooseFrom: Schema.Attribute.String;
+    ChooseFromList1: Schema.Attribute.String;
+    ChooseFromList2: Schema.Attribute.String;
+    ChooseFromList3: Schema.Attribute.String;
+    ChooseFromList4: Schema.Attribute.String;
+    ChooseFromList5: Schema.Attribute.String;
+    IdealFor: Schema.Attribute.String;
+    IdealForList1: Schema.Attribute.String;
+    IdealForList2: Schema.Attribute.String;
+    IdealForList3: Schema.Attribute.String;
+    IdealForList4: Schema.Attribute.String;
+    IdealForList5: Schema.Attribute.String;
+    ProductDesc: Schema.Attribute.String;
+    ProductsHeader: Schema.Attribute.String;
+    ProductsImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
 export interface OnlinebasedOnlineBased extends Struct.ComponentSchema {
   collectionName: 'components_onlinebased_online_baseds';
   info: {
@@ -412,16 +441,19 @@ export interface ProductsfeaturedproductsProductsFeaturedProducts
   attributes: {
     featureProductsHeader: Schema.Attribute.String;
     integratedformBtn: Schema.Attribute.String;
+    integratedformDesc: Schema.Attribute.Text;
     integratedformImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     integratedformTitle: Schema.Attribute.String;
     linerlessBtn: Schema.Attribute.String;
+    linerlessDesc: Schema.Attribute.Text;
     linerlessImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     linerlessTitle: Schema.Attribute.String;
     pressuresealBtn: Schema.Attribute.String;
+    pressuresealDesc: Schema.Attribute.Text;
     pressuresealImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
@@ -536,6 +568,57 @@ export interface ServicestypeServicesType extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedOpenGraph extends Struct.ComponentSchema {
+  collectionName: 'components_shared_open_graphs';
+  info: {
+    displayName: 'openGraph';
+    icon: 'project-diagram';
+  };
+  attributes: {
+    ogDescription: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 200;
+      }>;
+    ogImage: Schema.Attribute.Media<'images'>;
+    ogTitle: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 70;
+      }>;
+    ogType: Schema.Attribute.String;
+    ogUrl: Schema.Attribute.String;
+  };
+}
+
+export interface SharedSeo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_seos';
+  info: {
+    displayName: 'seo';
+    icon: 'search';
+  };
+  attributes: {
+    canonicalURL: Schema.Attribute.String;
+    keywords: Schema.Attribute.Text;
+    metaDescription: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 160;
+        minLength: 50;
+      }>;
+    metaImage: Schema.Attribute.Media<'images'>;
+    metaRobots: Schema.Attribute.String;
+    metaTitle: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 60;
+      }>;
+    metaViewport: Schema.Attribute.String;
+    openGraph: Schema.Attribute.Component<'shared.open-graph', false>;
+    structuredData: Schema.Attribute.JSON;
+  };
+}
+
 export interface SmartefficientformSmartEfficientForm
   extends Struct.ComponentSchema {
   collectionName: 'components_smartefficientform_smart_efficient_forms';
@@ -611,6 +694,7 @@ declare module '@strapi/strapi' {
       'linerlesslabelhero.linerlesslabel-hero': LinerlesslabelheroLinerlesslabelHero;
       'linerlesslabelwhatis.linerlesslabel-what-is': LinerlesslabelwhatisLinerlesslabelWhatIs;
       'moreproducts.more-products': MoreproductsMoreProducts;
+      'moreproductstest.more-products-test': MoreproductstestMoreProductsTest;
       'onlinebased.online-based': OnlinebasedOnlineBased;
       'pressuresealhero.pressureseal-hero': PressuresealheroPressuresealHero;
       'pressuresealwhatis.pressureseal-what-is': PressuresealwhatisPressuresealWhatIs;
@@ -623,6 +707,8 @@ declare module '@strapi/strapi' {
       'securefold.secure-fold': SecurefoldSecureFold;
       'servicehero.service-hero': ServiceheroServiceHero;
       'servicestype.services-type': ServicestypeServicesType;
+      'shared.open-graph': SharedOpenGraph;
+      'shared.seo': SharedSeo;
       'smartefficientform.smart-efficient-form': SmartefficientformSmartEfficientForm;
       'sustainablelabel.sustainable-label': SustainablelabelSustainableLabel;
       'uniqueproducts.unique-products': UniqueproductsUniqueProducts;
