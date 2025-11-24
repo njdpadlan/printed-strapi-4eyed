@@ -8,12 +8,12 @@
     "moreproductsHeader": {
       "type": "string"
     },
-    "formsTitle": {
+    "lasercutTitle": {
       "type": "string"
     },
-    "formsImageGallery": {
+    "lasercutImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -21,12 +21,30 @@
         "audios"
       ]
     },
-    "envelopesTitle": {
+    "highqualitylaserTitle": {
       "type": "string"
     },
-    "envelopesImageGallery": {
+    "laserCutAbout": {
+      "type": "string"
+    },
+    "lasercutText": {
+      "type": "text"
+    },
+    "partsText": {
+      "type": "text"
+    },
+    "featuresText": {
+      "type": "string"
+    },
+    "customsizesText": {
+      "type": "text"
+    },
+    "snapsetTitle": {
+      "type": "string"
+    },
+    "snapsetImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -34,12 +52,30 @@
         "audios"
       ]
     },
-    "chequesTitle": {
+    "snapsetAbout": {
       "type": "string"
     },
-    "chequesImageGallery": {
+    "durableTitle": {
+      "type": "string"
+    },
+    "multipartText": {
+      "type": "text"
+    },
+    "snapsetpartsText": {
+      "type": "text"
+    },
+    "commonuseText": {
+      "type": "string"
+    },
+    "fieldserviceText": {
+      "type": "text"
+    },
+    "continuousTitle": {
+      "type": "string"
+    },
+    "continuousImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -47,18 +83,66 @@
         "audios"
       ]
     },
-    "labelsmarketingTitle": {
+    "continuousAbout": {
       "type": "string"
     },
-    "labelsmarketingImageGallery": {
+    "reliableTitle": {
+      "type": "string"
+    },
+    "continuousText": {
+      "type": "text"
+    },
+    "continuouspartsText": {
+      "type": "text"
+    },
+    "idealforText": {
+      "type": "string"
+    },
+    "accountingText": {
+      "type": "text"
+    },
+    "customenvelopeTitle": {
+      "type": "string"
+    },
+    "customenvelopeImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ]
+    },
+    "customEnvelopeAbout": {
+      "type": "string"
+    },
+    "deliverbrandfirstTitle": {
+      "type": "string"
+    },
+    "daytodayText": {
+      "type": "text"
+    },
+    "regularText": {
+      "type": "text"
+    },
+    "availableoptionsText": {
+      "type": "string"
+    },
+    "regularwindowText": {
+      "type": "text"
+    },
+    "laserCutChooseFrom": {
+      "type": "string"
+    },
+    "snapsetChooseFrom": {
+      "type": "string"
+    },
+    "customEnvelopeChooseFrom": {
+      "type": "string"
+    },
+    "continuousChooseFrom": {
+      "type": "string"
     }
   },
   "config": {}

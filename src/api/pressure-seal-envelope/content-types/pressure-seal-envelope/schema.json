@@ -16,7 +16,7 @@
       "components": [
         "pressuresealhero.pressureseal-hero",
         "pressuresealwhatis.pressureseal-what-is",
-        "pressuresealimagegallery.pressureseal-image-gallery"
+        "securefold.secure-fold"
       ]
     }
   }

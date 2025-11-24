@@ -8,10 +8,7 @@
     "aboutUsHeroHeader": {
       "type": "string"
     },
-    "aboutUsHeroDesc": {
-      "type": "text"
-    },
-    "aboutUsHeroImage": {
+    "aboutUsHeroImg": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -20,6 +17,18 @@
         "videos",
         "audios"
       ]
+    },
+    "smartPrintingText": {
+      "type": "string"
+    },
+    "trustedExpertiseText": {
+      "type": "string"
+    },
+    "canadianBasedText": {
+      "type": "string"
+    },
+    "aboutUsHeroDesc": {
+      "type": "text"
     }
   },
   "config": {}

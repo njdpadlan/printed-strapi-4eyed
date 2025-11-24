@@ -11,7 +11,17 @@
     "integratedformlabelDesc": {
       "type": "text"
     },
-    "integratedformlabelImage": {
+    "integratedformlabelImageMobile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "integratedformlabelImageDesktop": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

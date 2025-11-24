@@ -14,15 +14,6 @@
     "Phone": {
       "type": "string"
     },
-    "Subject": {
-      "type": "string"
-    },
-    "CompanyName": {
-      "type": "string"
-    },
-    "ContactPreference": {
-      "type": "string"
-    },
     "Message": {
       "type": "text"
     },

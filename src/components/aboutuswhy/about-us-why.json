@@ -5,22 +5,28 @@
   },
   "options": {},
   "attributes": {
-    "aboutUsWhyTitle": {
+    "whyChooseHeader": {
       "type": "string"
     },
-    "aboutUsWhyDesc": {
+    "whyChooseDesc": {
       "type": "text"
     },
-    "aboutUsWhatTitle": {
+    "whatSetsApartHeader": {
       "type": "string"
     },
-    "aboutUsWhatDesc": {
+    "atPrintedDesc": {
       "type": "text"
     },
-    "aboutUsWhyBtn": {
+    "withDecadesDesc": {
+      "type": "text"
+    },
+    "printSmarterText": {
       "type": "string"
     },
-    "aboutUsWhyImage": {
+    "printedText": {
+      "type": "string"
+    },
+    "aboutusWhyImage": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -29,6 +35,9 @@
         "videos",
         "audios"
       ]
+    },
+    "aboutUsBtn": {
+      "type": "string"
     }
   },
   "config": {}

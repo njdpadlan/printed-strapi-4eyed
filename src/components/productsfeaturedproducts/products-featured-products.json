@@ -55,6 +55,15 @@
     },
     "integratedformBtn": {
       "type": "string"
+    },
+    "pressuresealDesc": {
+      "type": "text"
+    },
+    "linerlessDesc": {
+      "type": "text"
+    },
+    "integratedformDesc": {
+      "type": "text"
     }
   },
   "config": {}

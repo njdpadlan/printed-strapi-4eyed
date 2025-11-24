@@ -8,10 +8,20 @@
     "linerlesslabelHeader": {
       "type": "string"
     },
-    "linerlesslabelDesc": {
+    "linerlesslabelText": {
       "type": "text"
     },
-    "linerlesslabelImage": {
+    "linerlessImageMobile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linerlessImageDesktop": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

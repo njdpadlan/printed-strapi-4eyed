@@ -21,7 +21,10 @@
     "aboutText": {
       "type": "text"
     },
-    "aboutBtn": {
+    "requestQuoteBtn": {
+      "type": "string"
+    },
+    "contactUsBtn": {
       "type": "string"
     }
   },

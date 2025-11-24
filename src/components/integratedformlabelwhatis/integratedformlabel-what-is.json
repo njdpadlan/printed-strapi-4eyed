@@ -11,7 +11,10 @@
     "integratedformlabelWhatIsDesc": {
       "type": "text"
     },
-    "integratedformlabelWhatIsImage": {
+    "integratedsolutionText": {
+      "type": "text"
+    },
+    "integratedformImage1": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -21,8 +24,25 @@
         "audios"
       ]
     },
-    "integratedformBtn": {
-      "type": "string"
+    "integratedformImage2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "integratedformImage3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   },
   "config": {}

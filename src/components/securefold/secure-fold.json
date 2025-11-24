@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_securefold_secure_folds",
+  "info": {
+    "displayName": "SecureFold"
+  },
+  "options": {},
+  "attributes": {
+    "idealforText": {
+      "type": "string"
+    },
+    "payroll": {
+      "type": "string"
+    },
+    "taxforms": {
+      "type": "string"
+    },
+    "statements": {
+      "type": "string"
+    },
+    "utilitybills": {
+      "type": "string"
+    },
+    "directmail": {
+      "type": "string"
+    },
+    "securefoldImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "securefoldBtn": {
+      "type": "string"
+    },
+    "securefoldTitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

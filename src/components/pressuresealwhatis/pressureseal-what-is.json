@@ -11,7 +11,10 @@
     "pressuresealWhatIsDesc": {
       "type": "text"
     },
-    "pressuresealWhatIsImage": {
+    "sealedbypressureText": {
+      "type": "text"
+    },
+    "pressuresealImage1": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -21,8 +24,25 @@
         "audios"
       ]
     },
-    "pressuresealBtn": {
-      "type": "string"
+    "pressuresealImage2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pressuresealImage3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   },
   "config": {}

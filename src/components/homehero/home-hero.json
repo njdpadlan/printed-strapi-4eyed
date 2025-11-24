@@ -21,7 +21,31 @@
     "heroText": {
       "type": "text"
     },
-    "heroBtn": {
+    "ourProductsHeader": {
+      "type": "string"
+    },
+    "ourProductsText": {
+      "type": "string"
+    },
+    "ourProductsBtn": {
+      "type": "string"
+    },
+    "onlineServicesHeader": {
+      "type": "string"
+    },
+    "onlineServicesText": {
+      "type": "string"
+    },
+    "onlineServicesBtn": {
+      "type": "string"
+    },
+    "promoProductsHeader": {
+      "type": "string"
+    },
+    "promoProductsText": {
+      "type": "string"
+    },
+    "promoProductsBtn": {
       "type": "string"
     }
   },
