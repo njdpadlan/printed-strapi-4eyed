@@ -53,6 +53,34 @@ export interface AboutuswhyAboutUsWhy extends Struct.ComponentSchema {
   };
 }
 
+export interface AddmoreproductsAddMoreProducts extends Struct.ComponentSchema {
+  collectionName: 'components_addmoreproducts_add_more_products';
+  info: {
+    displayName: 'AddMoreProducts';
+  };
+  attributes: {
+    About: Schema.Attribute.String;
+    AboutDesc: Schema.Attribute.String;
+    ChooseFrom: Schema.Attribute.String;
+    ChooseFromList1: Schema.Attribute.String;
+    ChooseFromList2: Schema.Attribute.String;
+    ChooseFromList3: Schema.Attribute.String;
+    ChooseFromList4: Schema.Attribute.String;
+    ChooseFromList5: Schema.Attribute.String;
+    IdealFor: Schema.Attribute.String;
+    IdealForList1: Schema.Attribute.String;
+    IdealForList2: Schema.Attribute.String;
+    IdealForList3: Schema.Attribute.String;
+    IdealForList4: Schema.Attribute.String;
+    IdealForList5: Schema.Attribute.String;
+    productsDesc: Schema.Attribute.Text;
+    productsHeader: Schema.Attribute.String;
+    productsImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
 export interface ContactusformContactusForm extends Struct.ComponentSchema {
   collectionName: 'components_contactusform_contactus_forms';
   info: {
@@ -682,6 +710,7 @@ declare module '@strapi/strapi' {
       'about.about': AboutAbout;
       'aboutushero.about-us-hero': AboutusheroAboutUsHero;
       'aboutuswhy.about-us-why': AboutuswhyAboutUsWhy;
+      'addmoreproducts.add-more-products': AddmoreproductsAddMoreProducts;
       'contactusform.contactus-form': ContactusformContactusForm;
       'contactushero.contactus-hero': ContactusheroContactusHero;
       'featuredproducts.featured-products': FeaturedproductsFeaturedProducts;

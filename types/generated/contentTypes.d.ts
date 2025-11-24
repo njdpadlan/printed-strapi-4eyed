@@ -653,8 +653,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         'producthero.product-hero',
         'featuredpromoproducts.featured-promo-products',
         'productsfeaturedproducts.products-featured-products',
-        'moreproducts.more-products',
-        'moreproductstest.more-products-test',
+        'addmoreproducts.add-more-products',
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;

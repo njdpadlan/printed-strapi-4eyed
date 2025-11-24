@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_addmoreproducts_add_more_products",
+  "info": {
+    "displayName": "AddMoreProducts"
+  },
+  "options": {},
+  "attributes": {
+    "productsHeader": {
+      "type": "string"
+    },
+    "productsImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "productsDesc": {
+      "type": "text"
+    },
+    "About": {
+      "type": "string"
+    },
+    "AboutDesc": {
+      "type": "string"
+    },
+    "ChooseFrom": {
+      "type": "string"
+    },
+    "ChooseFromList1": {
+      "type": "string"
+    },
+    "ChooseFromList2": {
+      "type": "string"
+    },
+    "ChooseFromList3": {
+      "type": "string"
+    },
+    "ChooseFromList4": {
+      "type": "string"
+    },
+    "ChooseFromList5": {
+      "type": "string"
+    },
+    "IdealFor": {
+      "type": "string"
+    },
+    "IdealForList1": {
+      "type": "string"
+    },
+    "IdealForList2": {
+      "type": "string"
+    },
+    "IdealForList3": {
+      "type": "string"
+    },
+    "IdealForList4": {
+      "type": "string"
+    },
+    "IdealForList5": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
