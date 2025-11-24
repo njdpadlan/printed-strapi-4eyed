@@ -25,7 +25,7 @@
       "type": "string"
     },
     "AboutDesc": {
-      "type": "string"
+      "type": "text"
     },
     "ChooseFrom": {
       "type": "string"

@@ -60,7 +60,7 @@ export interface AddmoreproductsAddMoreProducts extends Struct.ComponentSchema {
   };
   attributes: {
     About: Schema.Attribute.String;
-    AboutDesc: Schema.Attribute.String;
+    AboutDesc: Schema.Attribute.Text;
     ChooseFrom: Schema.Attribute.String;
     ChooseFromList1: Schema.Attribute.String;
     ChooseFromList2: Schema.Attribute.String;
