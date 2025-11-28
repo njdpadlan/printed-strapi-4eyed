@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "more_products",
+  "info": {
+    "singularName": "more-product",
+    "pluralName": "more-products",
+    "displayName": "MoreProduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productTitle": {
+      "type": "string"
+    },
+    "productImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ProductDesc": {
+      "type": "text"
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "ChooseFromList1": {
+      "type": "string"
+    },
+    "ChooseFromList2": {
+      "type": "string"
+    },
+    "ChooseFromList3": {
+      "type": "string"
+    },
+    "IdealForList1": {
+      "type": "string"
+    },
+    "IdealForList2": {
+      "type": "string"
+    },
+    "IdealForList3": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "productTitle"
+    }
+  }
+}

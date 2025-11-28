@@ -593,6 +593,46 @@ export interface ApiLinerlessLabelLinerlessLabel
   };
 }
 
+export interface ApiMoreProductMoreProduct extends Struct.CollectionTypeSchema {
+  collectionName: 'more_products';
+  info: {
+    displayName: 'MoreProduct';
+    pluralName: 'more-products';
+    singularName: 'more-product';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    ChooseFromList1: Schema.Attribute.String;
+    ChooseFromList2: Schema.Attribute.String;
+    ChooseFromList3: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    IdealForList1: Schema.Attribute.String;
+    IdealForList2: Schema.Attribute.String;
+    IdealForList3: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::more-product.more-product'
+    > &
+      Schema.Attribute.Private;
+    ProductDesc: Schema.Attribute.Text;
+    productImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    productTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'productTitle'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPressureSealEnvelopePressureSealEnvelope
   extends Struct.CollectionTypeSchema {
   collectionName: 'pressure_seal_envelopes';
@@ -1242,6 +1282,7 @@ declare module '@strapi/strapi' {
       'api::home.home': ApiHomeHome;
       'api::integrated-form-label.integrated-form-label': ApiIntegratedFormLabelIntegratedFormLabel;
       'api::linerless-label.linerless-label': ApiLinerlessLabelLinerlessLabel;
+      'api::more-product.more-product': ApiMoreProductMoreProduct;
       'api::pressure-seal-envelope.pressure-seal-envelope': ApiPressureSealEnvelopePressureSealEnvelope;
       'api::product.product': ApiProductProduct;
       'api::request-quote.request-quote': ApiRequestQuoteRequestQuote;
