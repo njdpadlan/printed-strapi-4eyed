@@ -608,12 +608,16 @@ export interface ApiMoreProductMoreProduct extends Struct.CollectionTypeSchema {
     ChooseFromList1: Schema.Attribute.String;
     ChooseFromList2: Schema.Attribute.String;
     ChooseFromList3: Schema.Attribute.String;
+    ChooseFromList4: Schema.Attribute.String;
+    ChooseFromList5: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     IdealForList1: Schema.Attribute.String;
     IdealForList2: Schema.Attribute.String;
     IdealForList3: Schema.Attribute.String;
+    IdealForList4: Schema.Attribute.String;
+    IdealForList5: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

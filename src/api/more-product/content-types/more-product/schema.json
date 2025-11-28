@@ -39,6 +39,12 @@
     "ChooseFromList3": {
       "type": "string"
     },
+    "ChooseFromList4": {
+      "type": "string"
+    },
+    "ChooseFromList5": {
+      "type": "string"
+    },
     "IdealForList1": {
       "type": "string"
     },
@@ -46,6 +52,12 @@
       "type": "string"
     },
     "IdealForList3": {
+      "type": "string"
+    },
+    "IdealForList4": {
+      "type": "string"
+    },
+    "IdealForList5": {
       "type": "string"
     },
     "slug": {
