@@ -460,6 +460,51 @@ export interface ApiAboutUsAboutUs extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAddMoreProductAddMoreProduct
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'add_more_products';
+  info: {
+    displayName: 'AddMoreProduct';
+    pluralName: 'add-more-products';
+    singularName: 'add-more-product';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    aboutDesc: Schema.Attribute.Text;
+    ChooseFromList1: Schema.Attribute.String;
+    ChooseFromList2: Schema.Attribute.String;
+    ChooseFromList3: Schema.Attribute.String;
+    ChooseFromList4: Schema.Attribute.String;
+    ChooseFromList5: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    IdealForList1: Schema.Attribute.String;
+    IdealForList2: Schema.Attribute.String;
+    IdealForList3: Schema.Attribute.String;
+    IdealForList4: Schema.Attribute.String;
+    IdealForList5: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::add-more-product.add-more-product'
+    > &
+      Schema.Attribute.Private;
+    ProductDesc: Schema.Attribute.Text;
+    productImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    productTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'productTitle'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiContactUsContactUs extends Struct.CollectionTypeSchema {
   collectionName: 'contact_uses';
   info: {
@@ -587,50 +632,6 @@ export interface ApiLinerlessLabelLinerlessLabel
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiMoreProductMoreProduct extends Struct.CollectionTypeSchema {
-  collectionName: 'more_products';
-  info: {
-    displayName: 'MoreProduct';
-    pluralName: 'more-products';
-    singularName: 'more-product';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    aboutDesc: Schema.Attribute.Text;
-    ChooseFromList1: Schema.Attribute.String;
-    ChooseFromList2: Schema.Attribute.String;
-    ChooseFromList3: Schema.Attribute.String;
-    ChooseFromList4: Schema.Attribute.String;
-    ChooseFromList5: Schema.Attribute.String;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    IdealForList1: Schema.Attribute.String;
-    IdealForList2: Schema.Attribute.String;
-    IdealForList3: Schema.Attribute.String;
-    IdealForList4: Schema.Attribute.String;
-    IdealForList5: Schema.Attribute.String;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::more-product.more-product'
-    > &
-      Schema.Attribute.Private;
-    ProductDesc: Schema.Attribute.Text;
-    productImage: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
-    productTitle: Schema.Attribute.String;
-    publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'productTitle'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1282,11 +1283,11 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-us.about-us': ApiAboutUsAboutUs;
+      'api::add-more-product.add-more-product': ApiAddMoreProductAddMoreProduct;
       'api::contact-us.contact-us': ApiContactUsContactUs;
       'api::home.home': ApiHomeHome;
       'api::integrated-form-label.integrated-form-label': ApiIntegratedFormLabelIntegratedFormLabel;
       'api::linerless-label.linerless-label': ApiLinerlessLabelLinerlessLabel;
-      'api::more-product.more-product': ApiMoreProductMoreProduct;
       'api::pressure-seal-envelope.pressure-seal-envelope': ApiPressureSealEnvelopePressureSealEnvelope;
       'api::product.product': ApiProductProduct;
       'api::request-quote.request-quote': ApiRequestQuoteRequestQuote;

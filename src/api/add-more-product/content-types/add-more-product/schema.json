@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "more_products",
+  "collectionName": "add_more_products",
   "info": {
-    "singularName": "more-product",
-    "pluralName": "more-products",
-    "displayName": "MoreProduct"
+    "singularName": "add-more-product",
+    "pluralName": "add-more-products",
+    "displayName": "AddMoreProduct"
   },
   "options": {
     "draftAndPublish": true
