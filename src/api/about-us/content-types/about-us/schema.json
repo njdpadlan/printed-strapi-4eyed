@@ -15,7 +15,8 @@
       "type": "dynamiczone",
       "components": [
         "aboutushero.about-us-hero",
-        "aboutuswhy.about-us-why"
+        "aboutuswhy.about-us-why",
+        "shared.seo"
       ]
     }
   }

@@ -15,7 +15,8 @@
       "type": "dynamiczone",
       "components": [
         "requestquotehero.requestquote-hero",
-        "requestquoteform.requestquote-form"
+        "requestquoteform.requestquote-form",
+        "shared.seo"
       ]
     }
   }

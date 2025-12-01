@@ -16,7 +16,8 @@
       "components": [
         "linerlesslabelhero.linerlesslabel-hero",
         "linerlesslabelwhatis.linerlesslabel-what-is",
-        "sustainablelabel.sustainable-label"
+        "sustainablelabel.sustainable-label",
+        "shared.seo"
       ]
     }
   }

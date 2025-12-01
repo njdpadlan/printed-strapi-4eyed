@@ -17,7 +17,8 @@
         "producthero.product-hero",
         "featuredpromoproducts.featured-promo-products",
         "productsfeaturedproducts.products-featured-products",
-        "addmoreproducts.add-more-products"
+        "addmoreproducts.add-more-products",
+        "shared.seo"
       ]
     }
   }

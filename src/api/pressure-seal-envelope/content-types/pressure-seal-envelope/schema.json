@@ -16,7 +16,8 @@
       "components": [
         "pressuresealhero.pressureseal-hero",
         "pressuresealwhatis.pressureseal-what-is",
-        "securefold.secure-fold"
+        "securefold.secure-fold",
+        "shared.seo"
       ]
     }
   }

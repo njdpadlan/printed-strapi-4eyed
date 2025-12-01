@@ -15,7 +15,8 @@
       "type": "dynamiczone",
       "components": [
         "contactushero.contactus-hero",
-        "contactusform.contactus-form"
+        "contactusform.contactus-form",
+        "shared.seo"
       ]
     }
   }

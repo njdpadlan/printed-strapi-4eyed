@@ -442,7 +442,7 @@ export interface ApiAboutUsAboutUs extends Struct.CollectionTypeSchema {
   };
   attributes: {
     AboutUsPage: Schema.Attribute.DynamicZone<
-      ['aboutushero.about-us-hero', 'aboutuswhy.about-us-why']
+      ['aboutushero.about-us-hero', 'aboutuswhy.about-us-why', 'shared.seo']
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -472,7 +472,11 @@ export interface ApiContactUsContactUs extends Struct.CollectionTypeSchema {
   };
   attributes: {
     ContactUsPage: Schema.Attribute.DynamicZone<
-      ['contactushero.contactus-hero', 'contactusform.contactus-form']
+      [
+        'contactushero.contactus-hero',
+        'contactusform.contactus-form',
+        'shared.seo',
+      ]
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -511,6 +515,7 @@ export interface ApiHomeHome extends Struct.CollectionTypeSchema {
         'featuredproducts.featured-products',
         'onlinebased.online-based',
         'about.about',
+        'shared.seo',
       ]
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -543,6 +548,7 @@ export interface ApiIntegratedFormLabelIntegratedFormLabel
         'integratedformlabelhero.integratedformlabel-hero',
         'integratedformlabelwhatis.integratedformlabel-what-is',
         'smartefficientform.smart-efficient-form',
+        'shared.seo',
       ]
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -578,6 +584,7 @@ export interface ApiLinerlessLabelLinerlessLabel
         'linerlesslabelhero.linerlesslabel-hero',
         'linerlesslabelwhatis.linerlesslabel-what-is',
         'sustainablelabel.sustainable-label',
+        'shared.seo',
       ]
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -619,6 +626,7 @@ export interface ApiPressureSealEnvelopePressureSealEnvelope
         'pressuresealhero.pressureseal-hero',
         'pressuresealwhatis.pressureseal-what-is',
         'securefold.secure-fold',
+        'shared.seo',
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;
@@ -654,6 +662,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         'featuredpromoproducts.featured-promo-products',
         'productsfeaturedproducts.products-featured-products',
         'addmoreproducts.add-more-products',
+        'shared.seo',
       ]
     >;
     publishedAt: Schema.Attribute.DateTime;
@@ -689,6 +698,7 @@ export interface ApiRequestQuoteRequestQuote
       [
         'requestquotehero.requestquote-hero',
         'requestquoteform.requestquote-form',
+        'shared.seo',
       ]
     >;
     updatedAt: Schema.Attribute.DateTime;
@@ -719,7 +729,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     ServicePage: Schema.Attribute.DynamicZone<
-      ['servicehero.service-hero', 'servicestype.services-type']
+      ['servicehero.service-hero', 'servicestype.services-type', 'shared.seo']
     >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
