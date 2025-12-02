@@ -15,7 +15,8 @@
       "type": "dynamiczone",
       "components": [
         "servicehero.service-hero",
-        "servicestype.services-type"
+        "servicestype.services-type",
+        "shared.seo"
       ]
     }
   }
