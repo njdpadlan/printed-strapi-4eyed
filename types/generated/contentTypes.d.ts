@@ -645,6 +645,34 @@ export interface ApiLinerlessLabelLinerlessLabel
   };
 }
 
+export interface ApiLogoLogo extends Struct.CollectionTypeSchema {
+  collectionName: 'logos';
+  info: {
+    displayName: 'Logo';
+    pluralName: 'logos';
+    singularName: 'logo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    FooterLogo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::logo.logo'> &
+      Schema.Attribute.Private;
+    NavLogo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPressureSealEnvelopePressureSealEnvelope
   extends Struct.CollectionTypeSchema {
   collectionName: 'pressure_seal_envelopes';
@@ -1298,6 +1326,7 @@ declare module '@strapi/strapi' {
       'api::home.home': ApiHomeHome;
       'api::integrated-form-label.integrated-form-label': ApiIntegratedFormLabelIntegratedFormLabel;
       'api::linerless-label.linerless-label': ApiLinerlessLabelLinerlessLabel;
+      'api::logo.logo': ApiLogoLogo;
       'api::pressure-seal-envelope.pressure-seal-envelope': ApiPressureSealEnvelopePressureSealEnvelope;
       'api::product.product': ApiProductProduct;
       'api::request-quote.request-quote': ApiRequestQuoteRequestQuote;
