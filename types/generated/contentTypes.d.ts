@@ -498,7 +498,6 @@ export interface ApiAddMoreProductAddMoreProduct
     >;
     productTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'productTitle'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -734,7 +733,6 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         'producthero.product-hero',
         'featuredpromoproducts.featured-promo-products',
         'productsfeaturedproducts.products-featured-products',
-        'addmoreproducts.add-more-products',
         'shared.seo',
       ]
     >;
